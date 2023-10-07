@@ -1,0 +1,56 @@
+h1{
+   color: rgb(216, 216, 0);
+   text-align: center;
+
+}
+
+body {
+    background-color: #240836;
+    text-align: ;
+
+}
+
+#data{
+    color: rgb(168, 122, 242);
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 16
+    px; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* Set width for all input boxes and submit button */
+input[type="text"],
+input[type="number"],
+input[type="radio"],
+select,
+input[type="submit"],
+input[type="reset"] {
+    width: 50%; /* Set all elements to take up the full width */
+    padding: 8px; /* Add padding for spacing */
+    box-sizing: border-box; 
+    align-items: center;
+}
+
+/* Style for container divs */
+div {
+    margin-bottom: 10px; /* Add margin between container divs */
+}
+
+/* Style for box titles */
+span.input-label {
+    display: block; /* Display on a separate line */
+    margin-bottom: 5px; /* Add margin between title and input box */
+}
+/* #gen {
+    display: inline;
+}
+
+.gender-radio {
+    margin-right: 10px;
+} */
+
+#sub{
+    color: ;
+}

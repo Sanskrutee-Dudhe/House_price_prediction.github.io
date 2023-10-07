@@ -1,0 +1,1729 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Prices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://google.com" target="blank">Go to google</a>
+
+    <!--  <img src="https://source.unsplash.com/600*900/apartment,house" alt="remote image"-->
+    <!--<img src="marla-prusik-5q1KnUjtjaM-unsplash.jpg" alt="Error" width="234"height ="612"-->
+
+<!-- for heading-->
+<h1>House Sales in King County Regression</h1>
+
+
+        <div id="data">
+            Bedrooms:
+            <br>
+            <select name="bedrooms">
+                <option value=""></option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedrooms</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4 Bedrooms</option>
+                <option value="5">5 Bedrooms</option>
+                <option value="6">6 Bedrooms</option>
+                <option value="7">7 Bedrooms</option>
+                <option value="8">8 Bedrooms</option>
+                <option value="9">9 Bedrooms</option>
+                <option value="10">10 Bedrooms</option>
+                <option value="11">11 Bedrooms</option>
+                <option value="32">32 Bedrooms</option>
+
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+    
+        <div id="data">
+            View:
+            <br>
+            <select name="view">
+                <option value=""></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div id="data">
+            Waterfront:
+            <br>
+            <select name="waterfront">
+                <option value=""></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+
+        <div id="data">
+            Condition:
+            <br>
+            <select name="condition">
+                <option value=""></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div id="data">
+            Grade:
+            <br>
+            <select name="grade">
+                <option value=""></option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+        </div>
+
+        <div  id = "data">
+        
+            Zip Code:
+            <br>
+            <select>
+                <option value=""></option>
+                <option value="98002">98002</option>
+                <option value="98003">98003</option>
+                <option value="98004">98004</option>
+                <option value="98005">98005</option>
+                <option value="98006">98006</option>
+                <option value="98007">98007</option>
+                <option value="98008">98008</option>
+                <option value="98010">98010</option>
+                <option value="98011">98011</option>
+                <option value="98014">98014</option>
+                <option value="98019">98019</option>
+                <option value="98022">98022</option>
+                <option value="98023">98023</option>
+                <option value="98024">98024</option>
+                <option value="98027">98027</option>
+                <option value="98028">98028</option>
+                <option value="98029">98029</option>
+                <option value="98030">98030</option>
+                <option value="98031">98031</option>
+                <option value="98032">98032</option>
+                <option value="98033">98033</option>
+                <option value="98034">98034</option>
+                <option value="98038">98038</option>
+                <option value="98039">98039</option>
+                <option value="98040">98040</option>
+                <option value="98042">98042</option>
+                <option value="98045">98045</option>
+                <option value="98052">98052</option>
+                <option value="98053">98053</option>
+                <option value="98055">98055</option>
+                <option value="98056">98056</option>
+                <option value="98058">98058</option>
+                <option value="98059">98059</option>
+                <option value="98065">98065</option>
+                <option value="98070">98070</option>
+                <option value="98072">98072</option>
+                <option value="98074">98074</option>
+                <option value="98075">98075</option>
+                <option value="98077">98077</option>
+                <option value="98092">98092</option>
+                <option value="98102">98102</option>
+                <option value="98103">98103</option>
+                <option value="98105">98105</option>
+                <option value="98106">98106</option>
+                <option value="98107">98107</option>
+                <option value="98108">98108</option>
+                <option value="98109">98109</option>
+                <option value="98112">98112</option>
+                <option value="98115">98115</option>
+                <option value="98116">98116</option>
+                <option value="98117">98117</option>
+                <option value="98118">98118</option>
+                <option value="98119">98119</option>
+                <option value="98122">98122</option>
+                <option value="98125">98125</option>
+                <option value="98126">98126</option>
+                <option value="98133">98133</option>
+                <option value="98136">98136</option>
+                <option value="98144">98144</option>
+                <option value="98146">98146</option>
+                <option value="98148">98148</option>
+                <option value="98155">98155</option>
+                <option value="98166">98166</option>
+                <option value="98168">98168</option>
+                <option value="98177">98177</option>
+                <option value="98178">98178</option>
+                <option value="98188">98188</option>
+                <option value="98198">98198</option>
+                <option value="98199">98199</option>
+            </select>
+        </div>
+        
+
+        <div id="data">
+            Floors:
+            <br>
+            <input type="number" name="floors" max="5" min="0">
+        </div>
+
+        <div id="sqft_living15">
+            <label for="sqft_living15">sqft_living15:</label>
+            <br>
+            <select name="sqft_living15">
+                <option value=""></option>
+                <option value="399">399</option>
+                <option value="460">460</option>
+                <option value="620">620</option>
+                <option value="670">670</option>
+                <option value="690">690</option>
+                <option value="700">700</option>
+                <option value="710">710</option>
+                <option value="720">720</option>
+                <option value="740">740</option>
+                <option value="750">750</option>
+                <option value="760">760</option>
+                <option value="770">770</option>
+                <option value="780">780</option>
+                <option value="790">790</option>
+                <option value="800">800</option>
+                <option value="806">806</option>
+                <option value="810">810</option>
+                <option value="820">820</option>
+                <option value="828">828</option>
+                <option value="830">830</option>
+                <option value="840">840</option>
+                <option value="850">850</option>
+                <option value="860">860</option>
+                <option value="870">870</option>
+                <option value="880">880</option>
+                <option value="890">890</option>
+                <option value="900">900</option>
+                <option value="910">910</option>
+                <option value="920">920</option>
+                <option value="930">930</option>
+                <option value="940">940</option>
+                <option value="950">950</option>
+                <option value="952">952</option>
+                <option value="960">960</option>
+                <option value="970">970</option>
+                <option value="980">980</option>
+                <option value="990">990</option>
+                <option value="998">998</option>
+                <option value="1000">1000</option>
+                <option value="1010">1010</option>
+                <option value="1020">1020</option>
+                <option value="1030">1030</option>
+                <option value="1040">1040</option>
+                <option value="1050">1050</option>
+                <option value="1056">1056</option>
+                <option value="1060">1060</option>
+                <option value="1070">1070</option>
+                <option value="1076">1076</option>
+                <option value="1078">1078</option>
+                <option value="1080">1080</option>
+                <option value="1084">1084</option>
+                <option value="1088">1088</option>
+                <option value="1090">1090</option>
+                <option value="1092">1092</option>
+                <option value="1098">1098</option>
+                <option value="1100">1100</option>
+                <option value="1110">1110</option>
+                <option value="1120">1120</option>
+                <option value="1125">1125</option>
+                <option value="1128">1128</option>
+                <option value="1130">1130</option>
+                <option value="1131">1131</option>
+                <option value="1132">1132</option>
+                <option value="1137">1137</option>
+                <option value="1138">1138</option>
+                <option value="1140">1140</option>
+                <option value="1150">1150</option>
+                <option value="1156">1156</option>
+                <option value="1160">1160</option>
+                <option value="1162">1162</option>
+                <option value="1168">1168</option>
+                <option value="1170">1170</option>
+                <option value="1175">1175</option>
+                <option value="1180">1180</option>
+                <option value="1188">1188</option>
+                <option value="1190">1190</option>
+                <option value="1200">1200</option>
+                <option value="1210">1210</option>
+                <option value="1216">1216</option>
+                <option value="1217">1217</option>
+                <option value="1220">1220</option>
+                <option value="1228">1228</option>
+                <option value="1230">1230</option>
+                <option value="1232">1232</option>
+                <option value="1240">1240</option>
+                <option value="1250">1250</option>
+                <option value="1256">1256</option>
+                <option value="1260">1260</option>
+                <option value="1264">1264</option>
+                <option value="1268">1268</option>
+                <option value="1270">1270</option>
+                <option value="1277">1277</option>
+                <option value="1280">1280</option>
+                <option value="1282">1282</option>
+                <option value="1285">1285</option>
+                <option value="1290">1290</option>
+                <option value="1295">1295</option>
+                <option value="1300">1300</option>
+                <option value="1302">1302</option>
+                <option value="1303">1303</option>
+                <option value="1304">1304</option>
+                <option value="1307">1307</option>
+                <option value="1309">1309</option>
+                <option value="1310">1310</option>
+                <option value="1320">1320</option>
+                <option value="1321">1321</option>
+                <option value="1326">1326</option>
+                <option value="1330">1330</option>
+                <option value="1336">1336</option>
+                <option value="1340">1340</option>
+                <option value="1346">1346</option>
+                <option value="1350">1350</option>
+                <option value="1352">1352</option>
+                <option value="1356">1356</option>
+                <option value="1357">1357</option>
+                <option value="1358">1358</option>
+                <option value="1360">1360</option>
+                <option value="1364">1364</option>
+                <option value="1365">1365</option>
+                <option value="1369">1369</option>
+                <option value="1370">1370</option>
+                <option value="1377">1377</option>
+                <option value="1380">1380</option>
+                <option value="1381">1381</option>
+                <option value="1390">1390</option>
+                <option value="1398">1398</option>
+                <option value="1399">1399</option>
+                <option value="1400">1400</option>
+                <option value="1404">1404</option>
+                <option value="1405">1405</option>
+                <option value="1408">1408</option>
+                <option value="1410">1410</option>
+                <option value="1414">1414</option>
+                <option value="1415">1415</option>
+                <option value="1420">1420</option>
+                <option value="1425">1425</option>
+                <option value="1427">1427</option>
+                <option value="1429">1429</option>
+                <option value="1430">1430</option>
+                <option value="1439">1439</option>
+                <option value="1440">1440</option>
+                <option value="1442">1442</option>
+                <option value="1443">1443</option>
+                <option value="1445">1445</option>
+                <option value="1448">1448</option>
+                <option value="1450">1450</option>
+                <option value="1458">1458</option>
+                <option value="1459">1459</option>
+                <option value="1460">1460</option>
+                <option value="1463">1463</option>
+                <option value="1466">1466</option>
+                <option value="1468">1468</option>
+                <option value="1470">1470</option>
+                <option value="1480">1480</option>
+                <option value="1481">1481</option>
+                <option value="1484">1484</option>
+                <option value="1490">1490</option>
+                <option value="1492">1492</option>
+                <option value="1494">1494</option>
+                <option value="1495">1495</option>
+                <option value="1500">1500</option>
+                <option value="1502">1502</option>
+                <option value="1509">1509</option>
+                <option value="1510">1510</option>
+                <option value="1516">1516</option>
+                <option value="1518">1518</option>
+                <option value="1520">1520</option>
+                <option value="1522">1522</option>
+                <option value="1525">1525</option>
+                <option value="1528">1528</option>
+                <option value="1530">1530</option>
+                <option value="1536">1536</option>
+                <option value="1537">1537</option>
+                <option value="1540">1540</option>
+                <option value="1544">1544</option>
+                <option value="1546">1546</option>
+                <option value="1550">1550</option>
+                <option value="1554">1554</option>
+                <option value="1560">1560</option>
+                <option value="1564">1564</option>
+                <option value="1566">1566</option>
+                <option value="1569">1569</option>
+                <option value="1570">1570</option>
+                <option value="1571">1571</option>
+                <option value="1572">1572</option>
+                <option value="1576">1576</option>
+                <option value="1580">1580</option>
+                <option value="1584">1584</option>
+                <option value="1590">1590</option>
+                <option value="1600">1600</option>
+                <option value="1608">1608</option>
+                <option value="1610">1610</option>
+                <option value="1616">1616</option>
+                <option value="1620">1620</option>
+                <option value="1630">1630</option>
+                <option value="1638">1638</option>
+                <option value="1639">1639</option>
+                <option value="1640">1640</option>
+                <option value="1650">1650</option>
+                <option value="1654">1654</option>
+                <option value="1658">1658</option>
+                <option value="1660">1660</option>
+                <option value="1664">1664</option>
+                <option value="1665">1665</option>
+                <option value="1670">1670</option>
+                <option value="1677">1677</option>
+                <option value="1678">1678</option>
+                <option value="1680">1680</option>
+                <option value="1690">1690</option>
+                <option value="1691">1691</option>
+                <option value="1696">1696</option>
+                <option value="1700">1700</option>
+                <option value="1708">1708</option>
+                <option value="1710">1710</option>
+                <option value="1714">1714</option>
+                <option value="1716">1716</option>
+                <option value="1720">1720</option>
+                <option value="1728">1728</option>
+                <option value="1730">1730</option>
+                <option value="1740">1740</option>
+                <option value="1745">1745</option>
+                <option value="1746">1746</option>
+                <option value="1750">1750</option>
+                <option value="1757">1757</option>
+                <option value="1760">1760</option>
+                <option value="1763">1763</option>
+                <option value="1765">1765</option>
+                <option value="1767">1767</option>
+                <option value="1768">1768</option>
+                <option value="1770">1770</option>
+                <option value="1780">1780</option>
+                <option value="1786">1786</option>
+                <option value="1790">1790</option>
+                <option value="1792">1792</option>
+                <option value="1798">1798</option>
+                <option value="1800">1800</option>
+                <option value="1802">1802</option>
+                <option value="1805">1805</option>
+                <option value="1810">1810</option>
+                <option value="1811">1811</option>
+                <option value="1813">1813</option>
+                    <option value="1815">1815</option>
+                    <option value="1820">1820</option>
+                    <option value="1830">1830</option>
+                    <option value="1834">1834</option>
+                    <option value="1840">1840</option>
+                    <option value="1845">1845</option>
+                    <option value="1847">1847</option>
+                    <option value="1850">1850</option>
+                    <option value="1855">1855</option>
+                    <option value="1860">1860</option>
+                    <option value="1862">1862</option>
+                    <option value="1870">1870</option>
+                    <option value="1876">1876</option>
+                    <option value="1880">1880</option>
+                    <option value="1884">1884</option>
+                    <option value="1886">1886</option>
+                    <option value="1890">1890</option>
+                    <option value="1894">1894</option>
+                    <option value="1900">1900</option>
+                    <option value="1910">1910</option>
+                    <option value="1914">1914</option>
+                    <option value="1919">1919</option>
+                    <option value="1920">1920</option>
+                    <option value="1921">1921</option>
+                    <option value="1930">1930</option>
+                    <option value="1934">1934</option>
+                    <option value="1940">1940</option>
+                    <option value="1941">1941</option>
+                    <option value="1943">1943</option>
+                    <option value="1949">1949</option>
+                    <option value="1950">1950</option>
+                    <option value="1955">1955</option>
+                    <option value="1960">1960</option>
+                    <option value="1961">1961</option>
+                    <option value="1970">1970</option>
+                    <option value="1975">1975</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1984">1984</option>
+                    <option value="1990">1990</option>
+                    <option value="2000">2000</option>
+                    <option value="2002">2002</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2037">2037</option>
+                    <option value="2040">2040</option>
+                    <option value="2049">2049</option>
+                    <option value="2050">2050</option>
+                    <option value="2052">2052</option>
+                    <option value="2054">2054</option>
+                    <option value="2056">2056</option>
+                    <option value="2060">2060</option>
+                    <option value="2070">2070</option>
+                    <option value="2075">2075</option>
+                    <option value="2076">2076</option>
+                    <option value="2077">2077</option>
+                    <option value="2080">2080</option>
+                    <option value="2083">2083</option>
+                    <option value="2090">2090</option>
+                    <option value="2091">2091</option>
+                    <option value="2092">2092</option>
+                    <option value="2095">2095</option>
+                    <option value="2099">2099</option>
+                    <option value="2100">2100</option>
+                    <option value="2106">2106</option>
+                    <option value="2109">2109</option>
+                    <option value="2110">2110</option>
+                    <option value="2112">2112</option>
+                    <option value="2114">2114</option>
+                    <option value="2120">2120</option>
+                    <option value="2125">2125</option>
+                    <option value="2130">2130</option>
+                    <option value="2136">2136</option>
+                    <option value="2140">2140</option>
+                    <option value="2142">2142</option>
+                    <option value="2144">2144</option>
+                    <option value="2150">2150</option>
+                    <option value="2154">2154</option>
+                    <option value="2155">2155</option>
+                    <option value="2156">2156</option>
+                    <option value="2160">2160</option>
+                    <option value="2165">2165</option>
+                    <option value="2166">2166</option>
+                    <option value="2168">2168</option>
+                    <option value="2170">2170</option>
+                    <option value="2175">2175</option>
+                    <option value="2180">2180</option>
+                    <option value="2189">2189</option>
+                    <option value="2190">2190</option>
+                    <option value="2197">2197</option>
+                    <option value="2198">2198</option>
+                    <option value="2200">2200</option>
+                    <option value="2210">2210</option>
+                    <option value="2214">2214</option>
+                    <option value="2216">2216</option>
+                    <option value="2220">2220</option>
+                    <option value="2221">2221</option>
+                    <option value="2230">2230</option>
+                    <option value="2234">2234</option>
+                    <option value="2236">2236</option>
+                    <option value="2238">2238</option>
+                    <option value="2240">2240</option>
+                    <option value="2242">2242</option>
+                    <option value="2246">2246</option>
+                    <option value="2250">2250</option>
+                    <option value="2253">2253</option>
+                <option value="2255">2255</option>
+                <option value="2256">2256</option>
+                <option value="2258">2258</option>
+                <option value="2260">2260</option>
+                <option value="2270">2270</option>
+                <option value="2273">2273</option>
+                <option value="2279">2279</option>
+                <option value="2280">2280</option>
+                <option value="2290">2290</option>
+                <option value="2297">2297</option>
+                <option value="2300">2300</option>
+                <option value="2303">2303</option>
+                <option value="2304">2304</option>
+                <option value="2305">2305</option>
+                <option value="2310">2310</option>
+                <option value="2315">2315</option>
+                <option value="2316">2316</option>
+                <option value="2320">2320</option>
+                <option value="2323">2323</option>
+                <option value="2326">2326</option>
+                <option value="2330">2330</option>
+                <option value="2333">2333</option>
+                <option value="2336">2336</option>
+                <option value="2340">2340</option>
+                <option value="2344">2344</option>
+                <option value="2350">2350</option>
+                <option value="2354">2354</option>
+                <option value="2358">2358</option>
+                <option value="2360">2360</option>
+                <option value="2363">2363</option>
+                <option value="2370">2370</option>
+                <option value="2376">2376</option>
+                <option value="2380">2380</option>
+                <option value="2381">2381</option>
+                <option value="2382">2382</option>
+                <option value="2384">2384</option>
+                <option value="2389">2389</option>
+                <option value="2390">2390</option>
+                <option value="2396">2396</option>
+                <option value="2400">2400</option>
+                <option value="2403">2403</option>
+                <option value="2405">2405</option>
+                <option value="2406">2406</option>
+                <option value="2409">2409</option>
+                <option value="2410">2410</option>
+                <option value="2412">2412</option>
+                <option value="2415">2415</option>
+                <option value="2419">2419</option>
+                <option value="2420">2420</option>
+                <option value="2424">2424</option>
+                <option value="2425">2425</option>
+                <option value="2430">2430</option>
+                <option value="2434">2434</option>
+                <option value="2437">2437</option>
+                <option value="2439">2439</option>
+                <option value="2440">2440</option>
+                <option value="2441">2441</option>
+                <option value="2450">2450</option>
+                <option value="2451">2451</option>
+                <option value="2456">2456</option>
+                <option value="2458">2458</option>
+                <option value="2460">2460</option>
+                <option value="2470">2470</option>
+                <option value="2474">2474</option>
+                <option value="2475">2475</option>
+                <option value="2478">2478</option>
+                <option value="2480">2480</option>
+                <option value="2488">2488</option>
+                <option value="2490">2490</option>
+                <option value="2495">2495</option>
+                <option value="2496">2496</option>
+                <option value="2500">2500</option>
+                <option value="2502">2502</option>
+                <option value="2510">2510</option>
+                <option value="2513">2513</option>
+                <option value="2516">2516</option>
+                <option value="2517">2517</option>
+                <option value="2518">2518</option>
+                <option value="2520">2520</option>
+                <option value="2527">2527</option>
+                <option value="2530">2530</option>
+                <option value="2533">2533</option>
+                <option value="2540">2540</option>
+                <option value="2547">2547</option>
+                <option value="2550">2550</option>
+                <option value="2554">2554</option>
+                <option value="2555">2555</option>
+                <option value="2560">2560</option>
+                <option value="2566">2566</option>
+                <option value="2570">2570</option>
+                <option value="2574">2574</option>
+                <option value="2575">2575</option>
+                <option value="2578">2578</option>
+                <option value="2580">2580</option>
+                <option value="2583">2583</option>
+                <option value="2586">2586</option>
+                <option value="2590">2590</option>
+                    <option value="2594">2594</option>
+                    <option value="2597">2597</option>
+                    <option value="2598">2598</option>
+                    <option value="2600">2600</option>
+                    <option value="2604">2604</option>
+                    <option value="2605">2605</option>
+                    <option value="2610">2610</option>
+                    <option value="2612">2612</option>
+                    <option value="2615">2615</option>
+                    <option value="2616">2616</option>
+                    <option value="2619">2619</option>
+                    <option value="2620">2620</option>
+                    <option value="2622">2622</option>
+                    <option value="2630">2630</option>
+                    <option value="2634">2634</option>
+                    <option value="2640">2640</option>
+                    <option value="2641">2641</option>
+                    <option value="2647">2647</option>
+                    <option value="2648">2648</option>
+                    <option value="2650">2650</option>
+                    <option value="2653">2653</option>
+                    <option value="2660">2660</option>
+                    <option value="2665">2665</option>
+                    <option value="2667">2667</option>
+                    <option value="2669">2669</option>
+                    <option value="2670">2670</option>
+                    <option value="2673">2673</option>
+                    <option value="2680">2680</option>
+                    <option value="2683">2683</option>
+                    <option value="2688">2688</option>
+                    <option value="2690">2690</option>
+                    <option value="2697">2697</option>
+                    <option value="2700">2700</option>
+                    <option value="2704">2704</option>
+                    <option value="2710">2710</option>
+                    <option value="2720">2720</option>
+                    <option value="2724">2724</option>
+                    <option value="2725">2725</option>
+                    <option value="2728">2728</option>
+                    <option value="2730">2730</option>
+                    <option value="2738">2738</option>
+                    <option value="2740">2740</option>
+                    <option value="2750">2750</option>
+                    <option value="2755">2755</option>
+                    <option value="2760">2760</option>
+                    <option value="2765">2765</option>
+                    <option value="2767">2767</option>
+                    <option value="2770">2770</option>
+                    <option value="2780">2780</option>
+                    <option value="2790">2790</option>
+                    <option value="2793">2793</option>
+                    <option value="2798">2798</option>
+                    <option value="2800">2800</option>
+                    <option value="2810">2810</option>
+                    <option value="2815">2815</option>
+                    <option value="2820">2820</option>
+                    <option value="2822">2822</option>
+                    <option value="2830">2830</option>
+                    <option value="2840">2840</option>
+                    <option value="2844">2844</option>
+                    <option value="2848">2848</option>
+                    <option value="2849">2849</option>
+                    <option value="2850">2850</option>
+                    <option value="2860">2860</option>
+                    <option value="2870">2870</option>
+                    <option value="2873">2873</option>
+                    <option value="2875">2875</option>
+                    <option value="2876">2876</option>
+                    <option value="2879">2879</option>
+                    <option value="2880">2880</option>
+                    <option value="2890">2890</option>
+                    <option value="2900">2900</option>
+                    <option value="2901">2901</option>
+                    <option value="2910">2910</option>
+                    <option value="2912">2912</option>
+                    <option value="2920">2920</option>
+                    <option value="2927">2927</option>
+                    <option value="2930">2930</option>
+                    <option value="2940">2940</option>
+                    <option value="2950">2950</option>
+                    <option value="2955">2955</option>
+                    <option value="2960">2960</option>
+                    <option value="2961">2961</option>
+                    <option value="2967">2967</option>
+                    <option value="2970">2970</option>
+                    <option value="2980">2980</option>
+                    <option value="2981">2981</option>
+                    <option value="2990">2990</option>
+                    <option value="2996">2996</option>
+                    <option value="3000">3000</option>
+                    <option value="3008">3008</option>
+                    <option value="3010">3010</option>
+                    <option value="3020">3020</option>
+                    <option value="3030">3030</option>
+                    <option value="3038">3038</option>
+                    <option value="3040">3040</option>
+                    <option value="3045">3045</option>
+                    <option value="3050">3050</option>
+                    <option value="3056">3056</option>
+                    <option value="3060">3060</option>
+                    <option value="3070">3070</option>
+                    <option value="3078">3078</option>
+                    <option value="3080">3080</option>
+                    <option value="3087">3087</option>
+                    <option value="3090">3090</option>
+                    <option value="3100">3100</option>
+                    <option value="3112">3112</option>
+                    <option value="3120">3120</option>
+                    <option value="3130">3130</option>
+                    <option value="3140">3140</option>
+                    <option value="3150">3150</option>
+                    <option value="3159">3159</option>
+                    <option value="3160">3160</option>
+                    <option value="3170">3170</option>
+                    <option value="3180">3180</option>
+                    <option value="3190">3190</option>
+                    <option value="3191">3191</option>
+                    <option value="3193">3193</option>
+                    <option value="3200">3200</option>
+                    <option value="3210">3210</option>
+                    <option value="3220">3220</option>
+                    <option value="3230">3230</option>
+                    <option value="3236">3236</option>
+                    <option value="3240">3240</option>
+                    <option value="3250">3250</option>
+                    <option value="3260">3260</option>
+                    <option value="3270">3270</option>
+                    <option value="3280">3280</option>
+                    <option value="3290">3290</option>
+                    <option value="3300">3300</option>
+                    <option value="3310">3310</option>
+                    <option value="3320">3320</option>
+                    <option value="3330">3330</option>
+                    <option value="3335">3335</option>
+                    <option value="3340">3340</option>
+                    <option value="3350">3350</option>
+                    <option value="3360">3360</option>
+                    <option value="3370">3370</option>
+                    <option value="3380">3380</option>
+                    <option value="3390">3390</option>
+                    <option value="3400">3400</option>
+                    <option value="3402">3402</option>
+                    <option value="3410">3410</option>
+                    <option value="3413">3413</option>
+                    <option value="3420">3420</option>
+                    <option value="3425">3425</option>
+                    <option value="3430">3430</option>
+                    <option value="3440">3440</option>
+                    <option value="3450">3450</option>
+                    <option value="3460">3460</option>
+                    <option value="3470">3470</option>
+                    <option value="3480">3480</option>
+                    <option value="3490">3490</option>
+                    <option value="3494">3494</option>
+                    <option value="3500">3500</option>
+                    <option value="3510">3510</option>
+                    <option value="3515">3515</option>
+                    <option value="3520">3520</option>
+                    <option value="3530">3530</option>
+                    <option value="3540">3540</option>
+                    <option value="3543">3543</option>
+                    <option value="3550">3550</option>
+                    <option value="3557">3557</option>
+                    <option value="3560">3560</option>
+                    <option value="3568">3568</option>
+                    <option value="3570">3570</option>
+                    <option value="3580">3580</option>
+                    <option value="3590">3590</option>
+                    <option value="3600">3600</option>
+                    <option value="3610">3610</option>
+                    <option value="3618">3618</option>
+                    <option value="3620">3620</option>
+                    <option value="3625">3625</option>
+                    <option value="3630">3630</option>
+                    <option value="3639">3639</option>
+                    <option value="3640">3640</option>
+                    <option value="3650">3650</option>
+                    <option value="3660">3660</option>
+                    <option value="3670">3670</option>
+                    <option value="3674">3674</option>
+                    <option value="3680">3680</option>
+                    <option value="3690">3690</option>
+                    <option value="3700">3700</option>
+                    <option value="3710">3710</option>
+                    <option value="3715">3715</option>
+                    <option value="3720">3720</option>
+                    <option value="3721">3721</option>
+                    <option value="3726">3726</option>
+                    <option value="3730">3730</option>
+                    <option value="3736">3736</option>
+                    <option value="3740">3740</option>
+                    <option value="3750">3750</option>
+                    <option value="3760">3760</option>
+                    <option value="3770">3770</option>
+                    <option value="3780">3780</option>
+                    <option value="3790">3790</option>
+                    <option value="3800">3800</option>
+                    <option value="3810">3810</option>
+                    <option value="3820">3820</option>
+                    <option value="3830">3830</option>
+                    <option value="3836">3836</option>
+                    <option value="3840">3840</option>
+                    <option value="3850">3850</option>
+                    <option value="3860">3860</option>
+                    <option value="3870">3870</option>
+                    <option value="3880">3880</option>
+                     <option value="3890">3890</option>
+                     <option value="3900">3900</option>
+                     <option value="3910">3910</option>
+                     <option value="3920">3920</option>
+                     <option value="3930">3930</option>
+                     <option value="3940">3940</option>
+                     <option value="3950">3950</option>
+                     <option value="3960">3960</option>
+                     <option value="3970">3970</option>
+                     <option value="3980">3980</option>
+                     <option value="3990">3990</option>
+                     <option value="4000">4000</option>
+                     <option value="4010">4010</option>
+                     <option value="4020">4020</option>
+                     <option value="4030">4030</option>
+                     <option value="4040">4040</option>
+                     <option value="4042">4042</option>
+                     <option value="4050">4050</option>
+                     <option value="4060">4060</option>
+                     <option value="4070">4070</option>
+                     <option value="4080">4080</option>
+                     <option value="4090">4090</option>
+                     <option value="4100">4100</option>
+                     <option value="4110">4110</option>
+                     <option value="4120">4120</option>
+                     <option value="4130">4130</option>
+                     <option value="4140">4140</option>
+                    <option value="4150">4150</option>
+                     <option value="4160">4160</option>
+                     <option value="4170">4170</option>
+                     <option value="4180">4180</option>
+                     <option value="4190">4190</option>
+                     <option value="4200">4200</option>
+                     <option value="4210">4210</option>
+                     <option value="4220">4220</option>
+                     <option value="4225">4225</option>
+                     <option value="4230">4230</option>
+                     <option value="4240">4240</option>
+                     <option value="4250">4250</option>
+                     <option value="4260">4260</option>
+                     <option value="4270">4270</option>
+                     <option value="4280">4280</option>
+                     <option value="4290">4290</option>
+                     <option value="4300">4300</option>
+                  <option value="4310">4310</option>
+                  <option value="4320">4320</option>
+                 <option value="4330">4330</option>
+                  <option value="4340">4340</option>
+                 <option value="4350">4350</option>
+                 <option value="4362">4362</option>
+                  <option value="4370">4370</option>
+                  <option value="4390">4390</option>
+        <option value="4400">4400</option>
+        <option value="4410">4410</option>
+        <option value="4420">4420</option>
+        <option value="4440">4440</option>
+        <option value="4443">4443</option>
+        <option value="4460">4460</option>
+        <option value="4470">4470</option>
+        <option value="4480">4480</option>
+        <option value="4490">4490</option>
+        <option value="4495">4495</option>
+        <option value="4510">4510</option>
+        <option value="4520">4520</option>
+        <option value="4530">4530</option>
+        <option value="4540">4540</option>
+        <option value="4550">4550</option>
+        <option value="4560">4560</option>
+        <option value="4570">4570</option>
+        <option value="4590">4590</option>
+        <option value="4600">4600</option>
+        <option value="4610">4610</option>
+        <option value="4620">4620</option>
+        <option value="4630">4630</option>
+        <option value="4640">4640</option>
+        <option value="4650">4650</option>
+        <option value="4660">4660</option>
+        <option value="4670">4670</option>
+        <option value="4680">4680</option>
+        <option value="4690">4690</option>
+        <option value="4700">4700</option>
+        <option value="4730">4730</option>
+        <option value="4740">4740</option>
+        <option value="4750">4750</option>
+        <option value="4760">4760</option>
+        <option value="4770">4770"</option>
+        <option value="4780">4780</option>
+        <option value="4800">4800</option>
+        <option value="4830">4830</option>
+        <option value="4850">4850</option>
+        <option value="4890">4890</option>
+        <option value="4900">4900</option>
+        <option value="4913">4913</option>
+        <option value="4920">4920</option>
+        <option value="4930">4930</option>
+        <option value="4940">4940</option>
+        <option value="4950">4950</option>
+        <option value="5000">5000</option>
+        <option value="5030">5030</option>
+        <option value="5070">5070</option>
+        <option value="5080">5080</option>
+        <option value="5110">5110</option>
+        <option value="5170">5170</option>
+        <option value="5200">5200</option>
+        <option value="5220">5220</option>
+        <option value="5330">5330</option>
+        <option value="5340">5340</option>
+        <option value="5380">5380</option>
+        <option value="5500">5500</option>
+        <option value="5600">5600</option>
+        <option value="5610">5610</option>
+        <option value="5790">5790</option>
+        <option value="6110">6110</option>
+        <option value="6210">6210</option>
+                    
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div id="sub">
+            <input type="button" value="Submit Now" onclick="calculatePrice()">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <script>
+        function calculatePrice() {
+
+            const selects = document.querySelectorAll('select');
+            for (const select of selects) {
+        if (select.value === "") {
+            alert("Please select an appropriate values");
+            return;
+        }
+    }
+
+            const sqft_living15 = parseInt(document.querySelector('select[name="sqft_living15"]').value);
+            let price;
+
+            if (sqft_living15 === 399) { price = 536000; }
+            else if (sqft_living15 === 460) { price = 257500; }
+            else if (sqft_living15 === 620) { price = 255000; }
+            else if (sqft_living15 === 670) { price = 314000; }
+            else if (sqft_living15 === 690) { price = 239000; }
+            else if (sqft_living15 === 700) { price = 175000; }
+      else if (sqft_living15 === 710) { price = 299000; }
+      else if (sqft_living15 === 720) { price = 240000; }
+      else if (sqft_living15 === 740) { price = 122000; }
+      else if (sqft_living15 === 750) { price = 160000; }
+      else if (sqft_living15 === 760) { price = 135000; }
+      else if (sqft_living15 === 770) { price = 275000; }
+      else if (sqft_living15 === 780) { price = 102500; }
+      else if (sqft_living15 === 790) { price = 287000; }
+      else if (sqft_living15 === 800) { price = 150000; }
+      else if (sqft_living15 === 806) { price = 269500; }
+      else if (sqft_living15 === 810) { price = 118125; }
+      else if (sqft_living15 === 820) { price = 170000; }
+      else if (sqft_living15 === 828) { price = 110000; }
+      else if (sqft_living15 === 830) { price = 155000; }
+      else if (sqft_living15 === 840) { price = 86500; }
+      else if (sqft_living15 === 850) { price = 100000; }
+      else if (sqft_living15 === 860) { price = 81000; }
+      else if (sqft_living15 === 870) { price = 150000; }
+      else if (sqft_living15 === 880) { price = 128750; }
+      else if (sqft_living15 === 890) { price = 89950; }
+      else if (sqft_living15 === 900) { price = 89000; }
+      else if (sqft_living15 === 910) { price = 160000; }
+      else if (sqft_living15 === 920) { price = 147000; }
+      else if (sqft_living15 === 930) { price = 141800; }
+      else if (sqft_living15 === 940) { price = 105000; }
+      else if (sqft_living15 === 950) { price = 152000; }
+      else if (sqft_living15 === 952) { price = 350000; }
+      else if (sqft_living15 === 960) { price = 143000; }
+      else if (sqft_living15 === 970) { price = 95000; }
+      else if (sqft_living15 === 980) { price = 90000; }
+      else if (sqft_living15 === 990) { price = 159995; }
+      else if (sqft_living15 === 998) { price = 320000; }
+      else if (sqft_living15 === 1000) { price = 175000; }
+      else if (sqft_living15 === 1010) { price = 125000; }
+      else if (sqft_living15 === 1020) { price = 150000; }
+      else if (sqft_living15 === 1030) { price = 150000; }
+      else if (sqft_living15 === 1040) { price = 92000; }
+      else if (sqft_living15 === 1050) { price = 163500; }
+      else if (sqft_living15 === 1056) { price = 288000; }
+      else if (sqft_living15 === 1060) { price = 110000; }
+      else if (sqft_living15 === 1070) { price = 115000; }
+      else if (sqft_living15 === 1076) { price = 290000; }
+      else if (sqft_living15 === 1078) { price = 207000; }
+      else if (sqft_living15 === 1080) { price = 162950; }
+      else if (sqft_living15 === 1084) { price = 265000; }
+      else if (sqft_living15 === 1088) { price = 238000; }
+      else if (sqft_living15 === 1090) { price = 110000; }
+      else if (sqft_living15 === 1092) { price = 160000; }
+      else if (sqft_living15 === 1098) { price = 250000; }
+      else if (sqft_living15 === 1100) { price = 124500; }
+      else if (sqft_living15 === 1110) { price = 153000; }
+      else if (sqft_living15 === 1120) { price = 100000; }
+      else if (sqft_living15 === 1125) { price = 310000; }
+      else if (sqft_living15 === 1128) { price = 286000; }
+      else if (sqft_living15 === 1130) { price = 109500; }
+      else if (sqft_living15 === 1131) { price = 394950; }
+      else if (sqft_living15 === 1132) { price = 480000; }
+      else if (sqft_living15 === 1137) { price = 410000; }
+      else if (sqft_living15 === 1138) { price = 435000; }
+      else if (sqft_living15 === 1340) { price = 110700; }
+      else if (sqft_living15 === 1346) { price = 615000; }
+      else if (sqft_living15 === 1350) { price = 115000; }
+      else if (sqft_living15 === 1352) { price = 324950; }
+      else if (sqft_living15 === 1356) { price = 207000; }
+      else if (sqft_living15 === 1357) { price = 205000; }
+      else if (sqft_living15 === 1358) { price = 280000; }
+      else if (sqft_living15 === 1360) { price = 95000; }
+      else if (sqft_living15 === 1364) { price = 354901; }
+      else if (sqft_living15 === 1365) { price = 431500; }
+      else if (sqft_living15 === 1369) { price = 312000; }
+      else if (sqft_living15 === 1370) { price = 166000; }
+      else if (sqft_living15 === 1377) { price = 403000; }
+      else if (sqft_living15 === 1380) { price = 100000; }
+      else if (sqft_living15 === 1381) { price = 360000; }
+      else if (sqft_living15 === 1390) { price = 150000; }
+      else if (sqft_living15 === 1398) { price = 250000; }
+      else if (sqft_living15 === 1399) { price = 327000; }
+      else if (sqft_living15 === 1400) { price = 147200; }
+      else if (sqft_living15 === 1404) { price = 340000; }
+      else if (sqft_living15 === 1405) { price = 405000; }
+      else if (sqft_living15 === 1408) { price = 200000; }
+      else if (sqft_living15 === 1410) { price = 107000; }
+      else if (sqft_living15 === 1414) { price = 428000; }
+      else if (sqft_living15 === 1415) { price = 625000; }
+      else if (sqft_living15 === 1420) { price = 161500; }
+      else if (sqft_living15 === 1425) { price = 375000; }
+      else if (sqft_living15 === 1427) { price = 279500; }
+      else if (sqft_living15 === 1429) { price = 355000; }
+      else if (sqft_living15 === 1430) { price = 156000; }
+      else if (sqft_living15 === 1439) { price = 310000; }
+      else if (sqft_living15 === 1440) { price = 130000; }
+      else if (sqft_living15 === 1442) { price = 251000; }
+      else if (sqft_living15 === 1443) { price = 250000; }
+      else if (sqft_living15 === 1445) { price = 355000; }
+      else if (sqft_living15 === 1448) { price = 450000; }
+      else if (sqft_living15 === 1450) { price = 130000; }
+      else if (sqft_living15 === 1458) { price = 375000; }
+      else if (sqft_living15 === 1459) { price = 384400; }
+      else if (sqft_living15 === 1460) { price = 142500; }
+      else if (sqft_living15 === 1463) { price = 552000; }
+      else if (sqft_living15 === 1466) { price = 719000; }
+      else if (sqft_living15 === 1468) { price = 273000; }
+      else if (sqft_living15 === 1470) { price = 133000; }
+      else if (sqft_living15 === 1480) { price = 100000; }
+      else if (sqft_living15 === 1481) { price = 223990; }
+      else if (sqft_living15 === 1484) { price = 365000; }
+      else if (sqft_living15 === 1490) { price = 84000; }
+      else if (sqft_living15 === 1492) { price = 120000; }
+      else if (sqft_living15 === 1494) { price = 465000; }
+      else if (sqft_living15 === 1495) { price = 400000; }
+      else if (sqft_living15 === 1500) { price = 149000; }
+      else if (sqft_living15 === 1502) { price = 218500; }
+      else if (sqft_living15 === 1509) { price = 322000; }
+      else if (sqft_living15 === 1510) { price = 120750; }
+      else if (sqft_living15 === 1516) { price = 417250; }
+      else if (sqft_living15 === 1518) { price = 550000; }
+      else if (sqft_living15 === 1520) { price = 160000; }
+      else if (sqft_living15 === 1522) { price = 399950; }
+      else if (sqft_living15 === 1525) { price = 200000; }
+      else if (sqft_living15 === 1528) { price = 265000; }
+      else if (sqft_living15 === 1530) { price = 139000; }
+      else if (sqft_living15 === 1536) { price = 269000; }
+      else if (sqft_living15 === 1537) { price = 255900; }
+      else if (sqft_living15 === 1540) { price = 161000; }
+      else if (sqft_living15 === 1544) { price = 255000; }
+      else if (sqft_living15 === 1546) { price = 298500; }
+      else if (sqft_living15 === 1550) { price = 145000; }
+      else if (sqft_living15 === 1554) { price = 353000; }
+      else if (sqft_living15 === 1560) { price = 120000; }
+      else if (sqft_living15 === 1564) { price = 205000; }
+      else if (sqft_living15 === 1566) { price = 165000; }
+      else if (sqft_living15 === 1569) { price = 575000; }
+      else if (sqft_living15 === 1570) { price = 109000; }
+      else if (sqft_living15 === 1571) { price = 370000; }
+      else if (sqft_living15 === 1572) { price = 82500; }
+      else if (sqft_living15 === 1576) { price = 340000; }
+      else if (sqft_living15 === 1580) { price = 174500; }
+      else if (sqft_living15 === 1584) { price = 260000; }
+      else if (sqft_living15 === 1590) { price = 119500; }
+      else if (sqft_living15 === 1600) { price = 118000; }
+      else if (sqft_living15 === 1608) { price = 287000; }
+      else if (sqft_living15 === 1610) { price = 187000; }
+      else if (sqft_living15 === 1616) { price = 194820; }
+      else if (sqft_living15 === 1620) { price = 105500; }
+      else if (sqft_living15 === 1630) { price = 129000; }
+      else if (sqft_living15 === 1638) { price = 509000; }
+      else if (sqft_living15 === 1639) { price = 295000; }
+      else if (sqft_living15 === 1640) { price = 203000; }
+      else if (sqft_living15 === 1650) { price = 156601; }
+      else if (sqft_living15 === 1654) { price = 305000; }
+      else if (sqft_living15 === 1658) { price = 263900; }
+      else if (sqft_living15 === 1660) { price = 139500; }
+      else if (sqft_living15 === 1664) { price = 260000; }
+      else if (sqft_living15 === 1665) { price = 429000; }
+      else if (sqft_living15 === 1670) { price = 129000; }
+      else if (sqft_living15 === 1677) { price = 245000; }
+      else if (sqft_living15 === 1678) { price = 255000; }
+      else if (sqft_living15 === 1680) { price = 150000; }
+      else if (sqft_living15 === 1690) { price = 162000; }
+      else if (sqft_living15 === 1691) { price = 282000; }
+      else if (sqft_living15 === 1696) { price = 482000; }
+      else if (sqft_living15 === 1700) { price = 78000; }
+      else if (sqft_living15 === 1708) { price = 347500; }
+      else if (sqft_living15 === 1710) { price = 122000; }
+      else if (sqft_living15 === 1714) { price = 293000; }
+      else if (sqft_living15 === 1716) { price = 625000; }
+      else if (sqft_living15 === 1720) { price = 190000; }
+      else if (sqft_living15 === 1728) { price = 525000; }
+      else if (sqft_living15 === 1730) { price = 137900; }
+      else if (sqft_living15 === 1740) { price = 145000; }
+      else if (sqft_living15 === 1745) { price = 464000; }
+      else if (sqft_living15 === 1746) { price = 303000; }
+      else if (sqft_living15 === 1750) { price = 169000; }
+      else if (sqft_living15 === 1757) { price = 342000; }
+      else if (sqft_living15 === 1760) { price = 119900; }
+      else if (sqft_living15 === 1763) { price = 260000; }
+      else if (sqft_living15 === 1765) { price = 250000; }
+      else if (sqft_living15 === 1767) { price = 174000; }
+      else if (sqft_living15 === 1768) { price = 229000; }
+      else if (sqft_living15 === 1770) { price = 178000; }
+      else if (sqft_living15 === 1780) { price = 158000; }
+      else if (sqft_living15 === 1786) { price = 385000; }
+      else if (sqft_living15 === 1790) { price = 140000; }
+      else if (sqft_living15 === 1792) { price = 315000; }
+      else if (sqft_living15 === 1798) { price = 279000; }
+      else if (sqft_living15 === 1800) { price = 175000; }
+      else if (sqft_living15 === 1802) { price = 538000; }
+      else if (sqft_living15 === 1805) { price = 292500; }
+      else if (sqft_living15 === 1810) { price = 140000; }
+      else if (sqft_living15 === 1811) { price = 260000; }
+      else if (sqft_living15 === 1813) { price = 269800;}
+      else if (sqft_living15 === 1815) { price = 267500; }
+      else if (sqft_living15 === 1820) { price = 104950; }
+      else if (sqft_living15 === 1830) { price = 185000; }
+      else if (sqft_living15 === 1834) { price = 292500; }
+      else if (sqft_living15 === 1840) { price = 158000; }
+      else if (sqft_living15 === 1845) { price = 259950; }
+      else if (sqft_living15 === 1847) { price = 215000; }
+      else if (sqft_living15 === 1850) { price = 95000; }
+      else if (sqft_living15 === 1855) { price = 519000; }
+      else if (sqft_living15 === 1860) { price = 133000; }
+      else if (sqft_living15 === 1862) { price = 260000; }
+      else if (sqft_living15 === 1870) { price = 194000; }
+      else if (sqft_living15 === 1876) { price = 613500; }
+      else if (sqft_living15 === 1880) { price = 154000; }
+      else if (sqft_living15 === 1884) { price = 600000; }
+      else if (sqft_living15 === 1886) { price = 830000; }
+      else if (sqft_living15 === 1890) { price = 182000; }
+      else if (sqft_living15 === 1894) { price = 270000; }
+      else if (sqft_living15 === 1900) { price = 240415; }
+      else if (sqft_living15 === 1910) { price = 165000; }
+      else if (sqft_living15 === 1914) { price = 310000; }
+      else if (sqft_living15 === 1919) { price = 280000; }
+      else if (sqft_living15 === 1920) { price = 197400; }
+      else if (sqft_living15 === 1921) { price = 245000; }
+      else if (sqft_living15 === 1930) { price = 201000; }
+      else if (sqft_living15 === 1934) { price = 235245; }
+      else if (sqft_living15 === 1940) { price = 180000; }
+      else if (sqft_living15 === 1941) { price = 482000; }
+      else if (sqft_living15 === 1943) { price = 360000; }
+      else if (sqft_living15 === 1949) { price = 205000; }
+      else if (sqft_living15 === 1950) { price = 215000; }
+      else if (sqft_living15 === 1955) { price = 690000; }
+      else if (sqft_living15 === 1960) { price = 165000; }
+      else if (sqft_living15 === 1961) { price = 289000; }
+      else if (sqft_living15 === 1970) { price = 147500; }
+      else if (sqft_living15 === 1975) { price = 305000; }
+      else if (sqft_living15 === 1979) { price = 280000; }
+      else if (sqft_living15 === 1980) { price = 192000; }
+      else if (sqft_living15 === 1981) { price = 299999; }
+      else if (sqft_living15 === 1984) { price = 785000; }
+      else if (sqft_living15 === 1990) { price = 229000; }
+      else if (sqft_living15 === 2000) { price = 190000; }
+      else if (sqft_living15 === 2002) { price = 300000; }
+      else if (sqft_living15 === 2004) { price = 390000; }
+      else if (sqft_living15 === 2005) { price = 355000; }
+      else if (sqft_living15 === 2009) { price = 274950; }
+      else if (sqft_living15 === 2010) { price = 150000; }
+      else if (sqft_living15 === 2011) { price = 310000; }
+      else if (sqft_living15 === 2014) { price = 321000; }
+      else if (sqft_living15 === 2015) { price = 857326; }
+      else if (sqft_living15 === 2019) { price = 500000; }
+      else if (sqft_living15 === 2020) { price = 150000; }
+      else if (sqft_living15 === 2027) { price = 759600; }
+      else if (sqft_living15 === 2028) { price = 485000; }
+      else if (sqft_living15 === 2029) { price = 384435; }
+      else if (sqft_living15 === 2030) { price = 209950; }
+      else if (sqft_living15 === 2037) { price = 590000; }
+      else if (sqft_living15 === 2040) { price = 183000; }
+      else if (sqft_living15 === 2049) { price = 260000; }
+      else if (sqft_living15 === 2050) { price = 210000; }
+      else if (sqft_living15 === 2052) { price = 349900; }
+      else if (sqft_living15 === 2054) { price = 577500; }
+      else if (sqft_living15 === 2056) { price = 303000; }
+      else if (sqft_living15 === 2060) { price = 83000; }
+      else if (sqft_living15 === 2070) { price = 210000; }
+      else if (sqft_living15 === 2075) { price = 331000; }
+      else if (sqft_living15 === 2076) { price = 298000; }
+      else if (sqft_living15 === 2077) { price = 227950; }
+      else if (sqft_living15 === 2080) { price = 170500;}
+      else if (sqft_living15 === 2083) { price = 855000; }
+      else if (sqft_living15 === 2090) { price = 220500; }
+      else if (sqft_living15 === 2091) { price = 277950; }
+      else if (sqft_living15 === 2092) { price = 390000; }
+      else if (sqft_living15 === 2095) { price = 259000; }
+      else if (sqft_living15 === 2099) { price = 289950; }
+      else if (sqft_living15 === 2100) { price = 235000; }
+      else if (sqft_living15 === 2106) { price = 515000; }
+      else if (sqft_living15 === 2109) { price = 325000; }
+      else if (sqft_living15 === 2110) { price = 245000; }
+      else if (sqft_living15 === 2112) { price = 855000; }
+      else if (sqft_living15 === 2114) { price = 363750; }
+      else if (sqft_living15 === 2120) { price = 219950; }
+      else if (sqft_living15 === 2125) { price = 438000; }
+      else if (sqft_living15 === 2130) { price = 220000; }
+      else if (sqft_living15 === 2136) { price = 399000; }
+      else if (sqft_living15 === 2140) { price = 159000; }
+      else if (sqft_living15 === 2142) { price = 645000; }
+      else if (sqft_living15 === 2144) { price = 293000; }
+      else if (sqft_living15 === 2150) { price = 170000; }
+      else if (sqft_living15 === 2154) { price = 390000; }
+      else if (sqft_living15 === 2155) { price = 358800; }
+      else if (sqft_living15 === 2156) { price = 333490; }
+      else if (sqft_living15 === 2160) { price = 245000; }
+      else if (sqft_living15 === 2165) { price = 592350; }
+      else if (sqft_living15 === 2166) { price = 298000; }
+      else if (sqft_living15 === 2168) { price = 625000; }
+      else if (sqft_living15 === 2170) { price = 218000; }
+      else if (sqft_living15 === 2175) { price = 600000; }
+      else if (sqft_living15 === 2180) { price = 210000; }
+      else if (sqft_living15 === 2189) { price = 305950; }
+      else if (sqft_living15 === 2190) { price = 200000; }
+      else if (sqft_living15 === 2197) { price = 327555; }
+      else if (sqft_living15 === 2198) { price = 388000; }
+      else if (sqft_living15 === 2200) { price = 265000; }
+      else if (sqft_living15 === 2210) { price = 210000; }
+      else if (sqft_living15 === 2214) { price = 235000; }
+      else if (sqft_living15 === 2216) { price = 667000; }
+      else if (sqft_living15 === 2220) { price = 170000; }
+      else if (sqft_living15 === 2221) { price = 287000; }
+      else if (sqft_living15 === 2230) { price = 245000; }
+      else if (sqft_living15 === 2234) { price = 545000; }
+      else if (sqft_living15 === 2236) { price = 295000; }
+      else if (sqft_living15 === 2238) { price = 257500; }
+      else if (sqft_living15 === 2240) { price = 160000; }
+      else if (sqft_living15 === 2242) { price = 292000; }
+      else if (sqft_living15 === 2246) { price = 570000; }
+      else if (sqft_living15 === 2250) { price = 198900; }
+      else if (sqft_living15 === 2253) { price = 580000; }
+      else if (sqft_living15 === 2255) { price = 345000; }
+      else if (sqft_living15 === 2256) { price = 365000; }
+      else if (sqft_living15 === 2258) { price = 285000; }
+      else if (sqft_living15 === 2260) { price = 215000; }
+      else if (sqft_living15 === 2270) { price = 230000; }
+      else if (sqft_living15 === 2273) { price = 359950; }
+      else if (sqft_living15 === 2279) { price = 386000; }
+      else if (sqft_living15 === 2280) { price = 210000; }
+      else if (sqft_living15 === 2290) { price = 289950; }
+      else if (sqft_living15 === 2297) { price = 374000; }
+      else if (sqft_living15 === 2300) { price = 179500; }
+      else if (sqft_living15 === 2303) { price = 300000; }
+      else if (sqft_living15 === 2304) { price = 348000; }
+      else if (sqft_living15 === 2305) { price = 335000; }
+      else if (sqft_living15 === 2310) { price = 285000; }
+      else if (sqft_living15 === 2315) { price = 715000; }
+      else if (sqft_living15 === 2316) { price = 471275; }
+      else if (sqft_living15 === 2320) { price = 151600; }
+      else if (sqft_living15 === 2323) { price = 370000; }
+      else if (sqft_living15 === 2326) { price = 339900; }
+      else if (sqft_living15 === 2330) { price = 275000; }
+      else if (sqft_living15 === 2333) { price = 340000; }
+      else if (sqft_living15 === 2336) { price = 435000; }
+      else if (sqft_living15 === 2340) { price = 283200; }
+      else if (sqft_living15 === 2344) { price = 355000; }
+      else if (sqft_living15 === 2350) { price = 168000; }
+      else if (sqft_living15 === 2354) { price = 1100000; }
+      else if (sqft_living15 === 2358) { price = 415000; }
+      else if (sqft_living15 === 2360) { price = 280000; }
+      else if (sqft_living15 === 2363) { price = 309000; }
+      else if (sqft_living15 === 2370) { price = 200126; }
+      else if (sqft_living15 === 2376) { price = 320000; }
+      else if (sqft_living15 === 2380) { price = 235000; }
+      else if (sqft_living15 === 2381) { price = 391500; }
+      else if (sqft_living15 === 2382) { price = 345000; }
+      else if (sqft_living15 === 2384) { price = 340000; }
+      else if (sqft_living15 === 2389) { price = 335000; }
+      else if (sqft_living15 === 2390) { price = 145000; }
+      else if (sqft_living15 === 2396) { price = 437500; }
+      else if (sqft_living15 === 2400) { price = 160000; }
+      else if (sqft_living15 === 2403) { price = 306000; }
+      else if (sqft_living15 === 2405) { price = 252000; }
+      else if (sqft_living15 === 2406) { price = 299000; }
+      else if (sqft_living15 === 2409) { price = 375900; }
+      else if (sqft_living15 === 2410) { price = 259000; }
+      else if (sqft_living15 === 2412) { price = 1035000; }
+      else if (sqft_living15 === 2415) { price = 850000; }
+      else if (sqft_living15 === 2419) { price = 359950; }
+      else if (sqft_living15 === 2420) { price = 212000; }
+      else if (sqft_living15 === 2424) { price = 299000; }
+      else if (sqft_living15 === 2425) { price = 460940; }
+      else if (sqft_living15 === 2430) { price = 250000; }
+      else if (sqft_living15 === 2434) { price = 259000; }
+      else if (sqft_living15 === 2437) { price = 285000; }
+      else if (sqft_living15 === 2439) { price = 400000; }
+      else if (sqft_living15 === 2440) { price = 240000; }
+      else if (sqft_living15 === 2441) { price = 345000; }
+      else if (sqft_living15 === 2450) { price = 249000; }
+      else if (sqft_living15 === 2451) { price = 849000; }
+      else if (sqft_living15 === 2456) { price = 330000; }
+      else if (sqft_living15 === 2458) { price = 399440; }
+      else if (sqft_living15 === 2460) { price = 285000; }
+      else if (sqft_living15 === 2470) { price = 300000; }
+      else if (sqft_living15 === 2474) { price = 250000; }
+      else if (sqft_living15 === 2475) { price = 298900; }
+      else if (sqft_living15 === 2478) { price = 329950; }
+      else if (sqft_living15 === 2480) { price = 272925; }
+      else if (sqft_living15 === 2488) { price = 184000; }
+      else if (sqft_living15 === 2490) { price = 305000; }
+      else if (sqft_living15 === 2495) { price = 290000; }
+      else if (sqft_living15 === 2496) { price = 661000; }
+      else if (sqft_living15 === 2500) { price = 241500; }
+      else if (sqft_living15 === 2502) { price = 334888; }
+      else if (sqft_living15 === 2510) { price = 284200; }
+      else if (sqft_living15 === 2513) { price = 367000; }
+      else if (sqft_living15 === 2516) { price = 300000; }
+      else if (sqft_living15 === 2517) { price = 299800; }
+      else if (sqft_living15 === 2518) { price = 659000; }
+      else if (sqft_living15 === 2520) { price = 239950; }
+      else if (sqft_living15 === 2527) { price = 375000; }
+      else if (sqft_living15 === 2530) { price = 299250; }
+      else if (sqft_living15 === 2533) { price = 370950; }
+      else if (sqft_living15 === 2540) { price = 299950; }
+      else if (sqft_living15 === 2547) { price = 272000; }
+      else if (sqft_living15 === 2550) { price = 256883; }
+      else if (sqft_living15 === 2554) { price = 1010000; }
+      else if (sqft_living15 === 2555) { price = 460458; }
+      else if (sqft_living15 === 2560) { price = 289950; }
+      else if (sqft_living15 === 2566) { price = 270000; }
+      else if (sqft_living15 === 2570) { price = 250000; }
+      else if (sqft_living15 === 2574) { price = 436472; }
+      else if (sqft_living15 === 2575) { price = 359000; }
+      else if (sqft_living15 === 2578) { price = 411605; }
+      else if (sqft_living15 === 2580) { price = 260000; }
+      else if (sqft_living15 === 2583) { price = 335000; }
+      else if (sqft_living15 === 2586) { price = 379500; }
+      else if (sqft_living15 === 2590) { price = 290000; }
+      else if (sqft_living15 === 2594) { price = 312891; }
+      else if (sqft_living15 === 2597) { price = 453000; }
+      else if (sqft_living15 === 2598) { price = 392440; }
+      else if (sqft_living15 === 2600) { price = 250000; }
+      else if (sqft_living15 === 2604) { price = 370000; }
+      else if (sqft_living15 === 2605) { price = 789800; }
+      else if (sqft_living15 === 2610) { price = 293000; }
+      else if (sqft_living15 === 2612) { price = 486940; }
+      else if (sqft_living15 === 2615) { price = 705640; }
+      else if (sqft_living15 === 2616) { price = 378950; }
+      else if (sqft_living15 === 2619) { price = 300000; }
+      else if (sqft_living15 === 2620) { price = 350000; }
+      else if (sqft_living15 === 2622) { price = 216000; }
+      else if (sqft_living15 === 2630) { price = 305000; }
+      else if (sqft_living15 === 2634) { price = 319950; }
+      else if (sqft_living15 === 2640) { price = 238000; }
+      else if (sqft_living15 === 2641) { price = 300000; }
+      else if (sqft_living15 === 2647) { price = 400950; }
+      else if (sqft_living15 === 2648) { price = 356250; }
+      else if (sqft_living15 === 2650) { price = 315000; }
+      else if (sqft_living15 === 2653) { price = 365000; }
+      else if (sqft_living15 === 2660) { price = 300000; }
+      else if (sqft_living15 === 2665) { price = 325000; }
+      else if (sqft_living15 === 2667) { price = 350000; }
+      else if (sqft_living15 === 2669) { price = 402395; }
+      else if (sqft_living15 === 2670) { price = 340000; }
+      else if (sqft_living15 === 2673) { price = 541800; }
+      else if (sqft_living15 === 2680) { price = 359500; }
+      else if (sqft_living15 === 2683) { price = 822000; }
+      else if (sqft_living15 === 2688) { price = 1100000; }
+      else if (sqft_living15 === 2690) { price = 300000; }
+      else if (sqft_living15 === 2697) { price = 438500; }
+      else if (sqft_living15 === 2700) { price = 260000; }
+      else if (sqft_living15 === 2704) { price = 432500; }
+      else if (sqft_living15 === 2710) { price = 275000; }
+      else if (sqft_living15 === 2720) { price = 180000; }
+      else if (sqft_living15 === 2724) { price = 340000; }
+      else if (sqft_living15 === 2725) { price = 447500; }
+      else if (sqft_living15 === 2728) { price = 357000; }
+      else if (sqft_living15 === 2730) { price = 270000; }
+      else if (sqft_living15 === 2738) { price = 324950; }
+      else if (sqft_living15 === 2740) { price = 289000; }
+      else if (sqft_living15 === 2750) { price = 325000; }
+      else if (sqft_living15 === 2755) { price = 653000; }
+      else if (sqft_living15 === 2760) { price = 246000; }
+      else if (sqft_living15 === 2765) { price = 545000; }
+      else if (sqft_living15 === 2767) { price = 425000; }
+      else if (sqft_living15 === 2770) { price = 312200; }
+      else if (sqft_living15 === 2780) { price = 305100; }
+      else if (sqft_living15 === 2790) { price = 330000; }
+      else if (sqft_living15 === 2793) { price = 421500; }
+      else if (sqft_living15 === 2798) { price = 491000; }
+      else if (sqft_living15 === 2800) { price = 253000; }
+      else if (sqft_living15 === 2810) { price = 249000; }
+      else if (sqft_living15 === 2815) { price = 442515; }
+      else if (sqft_living15 === 2820) { price = 277140; }
+      else if (sqft_living15 === 2822) { price = 1225000; }
+      else if (sqft_living15 === 2830) { price = 299999; }
+      else if (sqft_living15 === 2840) { price = 399950; }
+      else if (sqft_living15 === 2844) { price = 255000; }
+      else if (sqft_living15 === 2848) { price = 430236; }
+      else if (sqft_living15 === 2849) { price = 499160; }
+      else if (sqft_living15 === 2850) { price = 339000; }
+      else if (sqft_living15 === 2860) { price = 380000; }
+      else if (sqft_living15 === 2870) { price = 420000; }
+      else if (sqft_living15 === 2873) { price = 485230; }
+      else if (sqft_living15 === 2875) { price = 610000; }
+      else if (sqft_living15 === 2876) { price = 384000; }
+      else if (sqft_living15 === 2879) { price = 409950; }
+      else if (sqft_living15 === 2880) { price = 220000; }
+      else if (sqft_living15 === 2890) { price = 310000; }
+      else if (sqft_living15 === 2900) { price = 350000; }
+      else if (sqft_living15 === 2901) { price = 850000; }
+      else if (sqft_living15 === 2910) { price = 320000; }
+      else if (sqft_living15 === 2912) { price = 427000; }
+      else if (sqft_living15 === 2920) { price = 425000; }
+      else if (sqft_living15 === 2927) { price = 399950; }
+      else if (sqft_living15 === 2930) { price = 257000; }
+      else if (sqft_living15 === 2940) { price = 503000; }
+      else if (sqft_living15 === 2950) { price = 330000; }
+      else if (sqft_living15 === 2955) { price = 795000; }
+      else if (sqft_living15 === 2960) { price = 275000; }
+      else if (sqft_living15 === 2961) { price = 775000; }
+      else if (sqft_living15 === 2967) { price = 715000; }
+      else if (sqft_living15 === 2970) { price = 405000; }
+      else if (sqft_living15 === 2980) { price = 314000; }
+      else if (sqft_living15 === 2981) { price = 351000; }
+      else if (sqft_living15 === 2990) { price = 295500; }
+      else if (sqft_living15 === 2996) { price = 458000; }
+      else if (sqft_living15 === 3000) { price = 389950; }
+      else if (sqft_living15 === 3008) { price = 374500; }
+      else if (sqft_living15 === 3010) { price = 270000; }
+      else if (sqft_living15 === 3020) { price = 315000; }
+      else if (sqft_living15 === 3030) { price = 360000; }
+      else if (sqft_living15 === 3038) { price = 422000; }
+      else if (sqft_living15 === 3040) { price = 221000; }
+      else if (sqft_living15 === 3045) { price = 414000; }
+      else if (sqft_living15 === 3050) { price = 299950; }
+      else if (sqft_living15 === 3050) { price = 299950; }
+      else if (sqft_living15 === 3056) { price = 355425; }
+      else if (sqft_living15 === 3060) { price = 399000; }
+      else if (sqft_living15 === 3070) { price = 529000; }
+      else if (sqft_living15 === 3078) { price = 343000; }
+      else if (sqft_living15 === 3080) { price = 247500; }
+      else if (sqft_living15 === 3087) { price = 418000; }
+      else if (sqft_living15 === 3090) { price = 333000; }
+      else if (sqft_living15 === 3100) { price = 455000; }
+      else if (sqft_living15 === 3110) { price = 340000; }
+      else if (sqft_living15 === 3112) { price = 511000; }
+      else if (sqft_living15 === 3120) { price = 370000; }
+      else if (sqft_living15 === 3130) { price = 270000; }
+      else if (sqft_living15 === 3140) { price = 529888; }
+      else if (sqft_living15 === 3150) { price = 600000; }
+      else if (sqft_living15 === 3159) { price = 750000; }
+      else if (sqft_living15 === 3160) { price = 550000; }
+      else if (sqft_living15 === 3170) { price = 431000; }
+      else if (sqft_living15 === 3180) { price = 542500; }
+      else if (sqft_living15 === 3190) { price = 427000; }
+      else if (sqft_living15 === 3191) { price = 551000; }
+      else if (sqft_living15 === 3193) { price = 330000; }
+      else if (sqft_living15 === 3200) { price = 357500; }
+      else if (sqft_living15 === 3210) { price = 458000; }
+      else if (sqft_living15 === 3220) { price = 215000; }
+      else if (sqft_living15 === 3230) { price = 508000; }
+      else if (sqft_living15 === 3236) { price = 450000; }
+      else if (sqft_living15 === 3240) { price = 587000; }
+      else if (sqft_living15 === 3250) { price = 530000; }
+      else if (sqft_living15 === 3260) { price = 565000; }
+      else if (sqft_living15 === 3270) { price = 556000; }
+      else if (sqft_living15 === 3280) { price = 429900; }
+      else if (sqft_living15 === 3290) { price = 130000; }
+      else if (sqft_living15 === 3300) { price = 340000; }
+      else if (sqft_living15 === 3310) { price = 419000; }
+      else if (sqft_living15 === 3320) { price = 475000; }
+      else if (sqft_living15 === 3330) { price = 545000; }
+      else if (sqft_living15 === 3335) { price = 710000; }
+      else if (sqft_living15 === 3340) { price = 515000; }
+      else if (sqft_living15 === 3350) { price = 511000; }
+      else if (sqft_living15 === 3360) { price = 510000; }
+      else if (sqft_living15 === 3370) { price = 465000; }
+      else if (sqft_living15 === 3380) { price = 550000; }
+      else if (sqft_living15 === 3390) { price = 750000; }
+      else if (sqft_living15 === 3400) { price = 448000; }
+      else if (sqft_living15 === 3402) { price = 498000; }
+      else if (sqft_living15 === 3410) { price = 570000; }
+      else if (sqft_living15 === 3413) { price = 1275000; }
+      else if (sqft_living15 === 3420) { price = 486000; }
+      else if (sqft_living15 === 3425) { price = 673200; }
+      else if (sqft_living15 === 3430) { price = 749999; }
+      else if (sqft_living15 === 3440) { price = 549000; }
+      else if (sqft_living15 === 3450) { price = 590000; }
+      else if (sqft_living15 === 3460) { price = 730000; }
+      else if (sqft_living15 === 3470) { price = 575000; }
+      else if (sqft_living15 === 3480) { price = 490000; }
+      else if (sqft_living15 === 3490) { price = 549900; }
+      else if (sqft_living15 === 3494) { price = 363000; }
+      else if (sqft_living15 === 3500) { price = 539950; }
+      else if (sqft_living15 === 3510) { price = 450000; }
+      else if (sqft_living15 === 3515) { price = 820000; }
+      else if (sqft_living15 === 3520) { price = 600000; }
+      else if (sqft_living15 === 3530) { price = 420000; }
+      else if (sqft_living15 === 3540) { price = 742000; }
+      else if (sqft_living15 === 3543) { price = 865000; }
+      else if (sqft_living15 === 3550) { price = 635000; }
+      else if (sqft_living15 === 3557) { price = 254950; }
+      else if (sqft_living15 === 3560) { price = 755000; }
+      else if (sqft_living15 === 3568) { price = 510000; }
+      else if (sqft_living15 === 3570) { price = 770000; }
+      else if (sqft_living15 === 3580) { price = 679000; }
+      else if (sqft_living15 === 3590) { price = 625000; }
+      else if (sqft_living15 === 3600) { price = 775000; }
+      else if (sqft_living15 === 3610) { price = 370000; }
+      else if (sqft_living15 === 3618) { price = 550000; }
+      else if (sqft_living15 === 3620) { price = 633000; }
+      else if (sqft_living15 === 3625) { price = 790500; }
+      else if (sqft_living15 === 3630) { price = 610000; }
+      else if (sqft_living15 === 3639) { price = 770000; }
+      else if (sqft_living15 === 3640) { price = 549950; }
+      else if (sqft_living15 === 3650) { price = 473000; }
+      else if (sqft_living15 === 3660) { price = 670000; }
+      else if (sqft_living15 === 3670) { price = 685000; }
+      else if (sqft_living15 === 3674) { price = 485000; }
+      else if (sqft_living15 === 3680) { price = 690000; }
+      else if (sqft_living15 === 3690) { price = 695000; }
+      else if (sqft_living15 === 3700) { price = 760000; }
+      else if (sqft_living15 === 3710) { price = 639900; }
+      else if (sqft_living15 === 3715) { price = 725000; }
+      else if (sqft_living15 === 3720) { price = 785000; }
+      else if (sqft_living15 === 3721) { price = 1225000; }
+      else if (sqft_living15 === 3726) { price = 950000; }
+      else if (sqft_living15 === 3730) { price = 594000; }
+      else if (sqft_living15 === 3736) { price = 537000; }
+      else if (sqft_living15 === 3740) { price = 426000; }
+      else if (sqft_living15 === 3750) { price = 875000; }
+      else if (sqft_living15 === 3760) { price = 900000; }
+      else if (sqft_living15 === 3770) { price = 725126; }
+      else if (sqft_living15 === 3780) { price = 965000; }
+      else if (sqft_living15 === 3790) { price = 450000; }
+      else if (sqft_living15 === 3800) { price = 875000; }
+      else if (sqft_living15 === 3810) { price = 820000; }
+      else if (sqft_living15 === 3820) { price = 900000; }
+      else if (sqft_living15 === 3830) { price = 840000; }
+      else if (sqft_living15 === 3836) { price = 1505000; }
+      else if (sqft_living15 === 3840) { price = 635000; }
+      else if (sqft_living15 === 3850) { price = 885000; }
+      else if (sqft_living15 === 3860) { price = 820875; }
+      else if (sqft_living15 === 3870) { price = 700000; }
+      else if (sqft_living15 === 3880) { price = 759000; }
+      else if (sqft_living15 === 3890) { price = 912000; }
+      else if (sqft_living15 === 3900) { price = 883000; }
+      else if (sqft_living15 === 3910) { price = 850000; }
+      else if (sqft_living15 === 3920) { price = 625000; }
+      else if (sqft_living15 === 3930) { price = 760500; }
+      else if (sqft_living15 === 3940) { price = 715000; }
+      else if (sqft_living15 === 3950) { price = 657500; }
+      else if (sqft_living15 === 3960) { price = 825000; }
+      else if (sqft_living15 === 3970) { price = 1029280; }
+      else if (sqft_living15 === 3980) { price = 925900; }
+      else if (sqft_living15 === 3990) { price = 600000; }
+      else if (sqft_living15 === 4000) { price = 845950; }
+      else if (sqft_living15 === 4010) { price = 1050000; }
+      else if (sqft_living15 === 4020) { price = 994000; }
+      else if (sqft_living15 === 4030) { price = 1040000; }
+      else if (sqft_living15 === 4040) { price = 980000; }
+      else if (sqft_living15 === 4042) { price = 1200000; }
+      else if (sqft_living15 === 4050) { price = 604000; }
+      else if (sqft_living15 === 4060) { price = 930000; }
+      else if (sqft_living15 === 4070) { price = 710000; }
+      else if (sqft_living15 === 4080) { price = 879000; }
+      else if (sqft_living15 === 4090) { price = 783350; }
+      else if (sqft_living15 === 4100) { price = 930000; }
+      else if (sqft_living15 === 4110) { price = 1350000; }
+      else if (sqft_living15 === 4120) { price = 1360000; }
+      else if (sqft_living15 === 4130) { price = 775000; }
+      else if (sqft_living15 === 4140) { price = 950000; }
+      else if (sqft_living15 === 4150) { price = 2400000; }
+      else if (sqft_living15 === 4160) { price = 994900; }
+      else if (sqft_living15 === 4170) { price = 970000; }
+      else if (sqft_living15 === 4180) { price = 1070000; }
+      else if (sqft_living15 === 4190) { price = 935000; }
+      else if (sqft_living15 === 4200) { price = 729950; }
+      else if (sqft_living15 === 4210) { price = 760000; }
+      else if (sqft_living15 === 4220) { price = 865000; }
+      else if (sqft_living15 === 4225) { price = 1275000; }
+      else if (sqft_living15 === 4230) { price = 1578000; }
+      else if (sqft_living15 === 4240) { price = 700000; }
+      else if (sqft_living15 === 4250) { price = 1799000; }
+      else if (sqft_living15 === 4260) { price = 3400000; }
+      else if (sqft_living15 === 4270) { price = 780000; }
+      else if (sqft_living15 === 4280) { price = 1300000; }
+      else if (sqft_living15 === 4290) { price = 633000; }
+      else if (sqft_living15 === 4300) { price = 1110000; }
+      else if (sqft_living15 === 4310) { price = 945000; }
+      else if (sqft_living15 === 4320) { price = 1200000; }
+      else if (sqft_living15 === 4330) { price = 960000; }
+      else if (sqft_living15 === 4340) { price = 950000; }
+      else if (sqft_living15 === 4350) { price = 1380000; }
+      else if (sqft_living15 === 4362) { price = 442000; }
+      else if (sqft_living15 === 4370) { price = 920000; }
+      else if (sqft_living15 === 4390) { price = 765000; }
+      else if (sqft_living15 === 4400) { price = 1169000; }
+      else if (sqft_living15 === 4410) { price = 689000; }
+      else if (sqft_living15 === 4420) { price = 809000; }
+      else if (sqft_living15 === 4440) { price = 716500; }
+      else if (sqft_living15 === 4443) { price = 790000; }
+      else if (sqft_living15 === 4460) { price = 1702500; }
+      else if (sqft_living15 === 4470) { price = 1240000; }
+      else if (sqft_living15 === 4480) { price = 805000; }
+      else if (sqft_living15 === 4490) { price = 1060000; }
+      else if (sqft_living15 === 4495) { price = 870000; }
+      else if (sqft_living15 === 4510) { price = 909500; }
+      else if (sqft_living15 === 4520) { price = 1475000; }
+      else if (sqft_living15 === 4530) { price = 890000; }
+      else if (sqft_living15 === 4540) { price = 1059000; }
+      else if (sqft_living15 === 4550) { price = 3075000; }
+      else if (sqft_living15 === 4560) { price = 1200000; }
+      else if (sqft_living15 === 4570) { price = 1025000; }
+      else if (sqft_living15 === 4590) { price = 865950; }
+      else if (sqft_living15 === 4600) { price = 800000; }
+      else if (sqft_living15 === 4610) { price = 870000; }
+      else if (sqft_living15 === 4620) { price = 1174660; }
+      else if (sqft_living15 === 4630) { price = 1165000; }
+      else if (sqft_living15 === 4640) { price = 1062500; }
+      else if (sqft_living15 === 4650) { price = 1208000; }
+      else if (sqft_living15 === 4660) { price = 2575000; }
+      else if (sqft_living15 === 4670) { price = 785000; }
+      else if (sqft_living15 === 4680) { price = 1550000; }
+      else if (sqft_living15 === 4690) { price = 1267500; }
+      else if (sqft_living15 === 4700) { price = 1098000; }
+      else if (sqft_living15 === 4730) { price = 1400000; }
+      else if (sqft_living15 === 4740) { price = 1295650; }
+      else if (sqft_living15 === 4750) { price = 1079000; }
+      else if (sqft_living15 === 4760) { price = 1225000; }
+      else if (sqft_living15 === 4770) { price = 1005000; }
+      else if (sqft_living15 === 4780) { price = 2500000; }
+      else if (sqft_living15 === 4800) { price = 1150000; }
+      else if (sqft_living15 === 4830) { price = 1525000; }
+      else if (sqft_living15 === 4850) { price = 2200000; }
+      else if (sqft_living15 === 4890) { price = 1760000; }
+      else if (sqft_living15 === 4900) { price = 1415000; }
+      else if (sqft_living15 === 4913) { price = 3200000; }
+      else if (sqft_living15 === 4920) { price = 1042000; }
+      else if (sqft_living15 === 4930) { price = 1500000; }
+      else if (sqft_living15 === 4940) { price = 1615000; }
+      else if (sqft_living15 === 4950) { price = 970000; }
+      else if (sqft_living15 === 5000) { price = 1835000; }
+      else if (sqft_living15 === 5030) { price = 1488000; }
+      else if (sqft_living15 === 5070) { price = 3800000; }
+      else if (sqft_living15 === 5080) { price = 1280000; }
+      else if (sqft_living15 === 5110) { price = 1209000; }
+      else if (sqft_living15 === 5170) { price = 1300000; }
+      else if (sqft_living15 === 5200) { price = 1355000; }
+      else if (sqft_living15 === 5220) { price = 2480000; }
+      else if (sqft_living15 === 5330) { price = 1150000; }
+      else if (sqft_living15 === 5340) { price = 1575000; }
+      else if (sqft_living15 === 5380) { price = 1110000; }
+      else if (sqft_living15 === 5500) { price = 2408000; }
+      else if (sqft_living15 === 5600) { price = 1250000; }
+      else if (sqft_living15 === 5610) { price = 1950000; }
+      else if (sqft_living15 === 5790) { price = 1200000; }
+      else if (sqft_living15 === 6110) { price = 2983000; }
+      else if (sqft_living15 === 6210) { price = 2700000; }
+     
+     
+      else { price = 789098; } // Default value
+
+            alert(`Predicted Price: ${price}`);
+        };
+    </script>
+</body>
+</html>
