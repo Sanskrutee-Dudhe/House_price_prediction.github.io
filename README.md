@@ -60,7 +60,7 @@ The combination of these techniques and models allowed us to build an accurate h
 
 Document the results of your house price prediction model, including evaluation metrics and any visualizations that help explain the model's performance  with the help of web application.
 
-![Scatter Plot of Predicted vs. Actual Prices](/House_price_prediction.github.io/results/web.jpeg)
+![Web Application](results/web.jpeg)
 
 
 
