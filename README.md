@@ -60,7 +60,7 @@ The combination of these techniques and models allowed us to build an accurate h
 
 Document the results of your house price prediction model, including evaluation metrics and any visualizations that help explain the model's performance  with the help of web application.
 
-![Web Application](results/web.jpeg)
+![Web Application](https://github.com/Sanskrutee-Dudhe/House_price_prediction.github.io/blob/main/results/web.jpeg)
 
 
 
