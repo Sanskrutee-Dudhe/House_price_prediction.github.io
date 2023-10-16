@@ -1,7 +1,7 @@
 <h1 align="center"> House Price Prediction </h1>
 
-![image](https://github.com/Sanskrutee-Dudhe/noida-vegetable-market-analysis/blob/master/Images/veg_img.jpg)
-<br>
+![grubhub](https://github.com/Sanskrutee-Dudhe/House_price_prediction.github.io/assets/122347459/880d8917-4331-42f3-b442-192fe8292e2a)
+
 
 ## 👁️Project Overview
 
