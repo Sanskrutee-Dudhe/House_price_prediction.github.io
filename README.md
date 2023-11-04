@@ -108,7 +108,7 @@ Our analysis yielded the following key insights:
 ### 🏷️User Empowerment
 
 - The user-friendly web application empowers individuals to make informed decisions when buying or selling properties. It provides instant, data-driven estimates, ensuring users have the information they need at their fingertips.
-<br>
+
 
 ## 💼Summary
 
