@@ -112,7 +112,9 @@ Our analysis yielded the following key insights:
 
 ## 💼Summary
 
+The "House Price Prediction" project equips users with a reliable and data-driven approach to estimate property values. By meticulously preprocessing and analyzing data, we've identified crucial trends and correlations within the real estate market. Our developed machine learning models, including Linear Regression, Random Forest Regression, and XGBoost, ensure accurate price predictions.
 
+To enhance user accessibility, we've created an intuitive web application for instant property price estimates. This project empowers potential homebuyers and sellers with the knowledge needed to make informed real estate decisions, making it an invaluable resource for navigating the dynamic real estate landscape.
 
 ### 🎗️Learnings
 
